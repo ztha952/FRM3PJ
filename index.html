@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+    </style>
+</head>
+
+<body>
+    <main class="relative">
+        <nav class="w-10/12 flex justify-between nab z-20 items-center">
+            <div>
+                <img class="cursor-pointer" src="./images/logo.svg">
+            </div>
+            <div class="hidden sm:block">
+                <ul class="flex space-x-10 text-white items-center ">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li> Projects</li>
+                    <li class="text-black cursor-pointer bg-white py-2 px-4 rounded-2xl">Contact</li>
+                </ul>
+            </div>
+            <img class="sm:hidden toggle_btn" src="./images/icon-hamburger.svg">
+        </nav>
+        <div id="navArea">
+            <nav class="mb">
+                <div class="inner">
+                    <ul class="flex flex-col items-center">
+                        <li><a class="text-gray-400" href="#">About</a></li>
+                        <li><a class="text-gray-400" href="#">Services</a></li>
+                        <li><a class="text-gray-400" href="#">Projects</a></li>
+                        <li><a class="bg-yellow-300 rounded-3xl font-bold" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="mask"></div>
+        </div>
+        <section class="relative">
+            <div class="text-center">
+                <img class="hidden md:block" src="./images/desktop/image-header.jpg">
+                <img class="sm:hidden" src="./images/mobile/image-header.jpg">
+                <div class="centered mt-10">
+                    <p class='text-5xl font-bold uppercase head text-white tracking-widest mb-20'>
+                        We are creatives</p>
+                    <div>
+                        <img class="mx-auto" src="./images/icon-arrow-down.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col md:flex-row items-center justify-center">
+            <div class="flex-1">
+                <div class="w-80 p-7 mx-auto">
+                    <p class="font-bold text-3xl mb-7 head">Transform your brand</p>
+                    <p class="text-gray-500 mb-7">We are a full-service creative agency specializing in helping brands grow fast.
+                        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <span class="font-medium hover:underline hover:decoration-4 hover:decoration-orange-300 text-lg head">Learn more</span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="./images/desktop/image-transform.jpg ">
+            </div>
+        </section>
+        <section class="flex flex-col md:flex-row items-center justify-center">
+            <div class="flex-1">
+                <img src="./images/desktop/image-stand-out.jpg">
+            </div>
+            <div class="flex-1">
+                <div class="w-80 p-7 mx-auto ">
+                    <p class="font-bold text-3xl mb-7 head">Stand out to the right audience</p>
+                    <p class="text-gray-500 mb-7">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+                    <p class="font-medium hover:underline hover:decoration-4 hover:decoration-red-300 text-lg head">Learn more</p>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col sm:flex-row">
+            <div class="flex-1 relative">
+                <img src="./images/desktop/image-graphic-design.jpg">
+                <div class="bt-img text-center">
+                    <p class="head text-2xl">Graphic design</p>
+                    <p class="text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div class='flex-1 relative'>
+                <img src="./images/desktop/image-stand-out.jpg">
+                <div class="bt-img text-center">
+                    <p class="head text-2xl">Photography</p>
+                    <p class="text"> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <div class="w-10/12 mx-auto mt-20">
+                <p class="text-gray-300 text-2xl font-medium uppercase text-center head">Client testimonials</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 mt-10 p-5">
+                    <div class="flex flex-col items-center gap-10">
+                        <img class="rounded-full w-20" src="./images/image-emily.jpg">
+                        <div>
+                            <p class="text-gray-600 text">
+                                We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-bold head"> Emily R.</p>
+                            <p class="text-gray-400 text">Marketing Director</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center gap-10">
+                        <img class="rounded-full w-20" src="./images/image-thomas.jpg">
+                        <div>
+                            <p class="text-gray-600 text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-bold head">Thomas S.</p>
+                            <p class="text-gray-400 text">Chief Operating Officer</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center gap-10">
+                        <img class="rounded-full w-20" src="./images/image-jennie.jpg">
+                        <div>
+                            <p class="text-gray-600 text">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="font-bold head"> Jennie F.</p>
+                            <p class="text-gray-400 text">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-rows-2 grid-flow-col sm:grid-rows-1  ">
+                <img class="" src="./images/desktop/image-gallery-milkbottles.jpg">
+                <img class="" src="/images/desktop/image-gallery-orange.jpg">
+                <img class="" src="./images/desktop/image-gallery-cone.jpg">
+                <img class="" src="/images/desktop/image-gallery-sugarcubes.jpg">
+            </div>
+        </section>
+        <div class="flex flex-col items-center justify-items-center gap-10 bg-green-200 p-10">
+            <div>
+                <p class="font-bold text-2xl head">SUNNY SIDE</p>
+            </div>
+            <div class="flex space-x-10 text">
+                <p>About</p>
+                <p> Services
+                </p>
+                <p>Projects</p>
+            </div>
+            <div class="flex space-x-5">
+                <img src="./images/icon-facebook.svg">
+                <img src="./images/icon-instagram.svg">
+                <img src="./images/icon-twitter.svg">
+                <img src="./images/icon-pinterest.svg">
+            </div>
+        </div>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
